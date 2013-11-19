@@ -54,6 +54,7 @@ class SAPN{
 	 */
 	public function __construct( $mode = self::DEVELOPMENT )
 	{
+		$this->mode = $mode;
 		if( abs( $mode ) > 1 ){
 			throw new Exception( self::WRONG_MODE );
 		}
